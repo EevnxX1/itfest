@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,16 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Itim&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="font-kanit">
     <!-- navbar -->
-    <!-- <div class="w-full h-[100svh] fixed overflow-hidden flex justify-center backdrop-blur-xl z-50 bg-white/30">
-      <div class="w-[90%] py-5 flex flex-col gap-y-6">
+    <div class="w-full h-[100svh] fixed overflow-hidden flex justify-center backdrop-blur-xl z-50 bg-white/30 hidden animate-fadeIn" id="menu-navbar">
+      <div class="w-[90%] py-8 flex flex-col gap-y-6">
         <div class="w-full flex justify-between items-center">
           <div>
             <img class="w-[70px]" src="assets/3 Dot.png" alt="dot" />
           </div>
-          <div>
+          <div id="silang">
             <img class="w-[40px]" src="assets/x.png" alt="X" />
           </div>
         </div>
@@ -28,7 +29,7 @@
           <span class="border-b-4 border-white block"></span>
         </div>
         <section class="w-full flex flex-col gap-y-7">
-          <a href="" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2">
+          <a href="#page1" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2 nav-button">
             <div class="flex items-center justify-between w-[110px]">
               <div>
                 <img class="w-[38px]" src="assets/home.png" alt="home" />
@@ -37,7 +38,7 @@
             </div>
             <span class="block h-full w-2 bg-color1 rounded-full"></span>
           </a>
-          <a href="" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2">
+          <a href="#page2" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2 nav-button">
             <div class="flex items-center justify-between w-[110px]">
               <div>
                 <img class="w-[38px]" src="assets/about.png" alt="home" />
@@ -46,7 +47,7 @@
             </div>
             <span class="block h-full w-2 bg-color1 rounded-full"></span>
           </a>
-          <a href="" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2">
+          <a href="#page3" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2 nav-button">
             <div class="flex items-center justify-between w-[202px]">
               <div>
                 <img class="w-[38px]" src="assets/timeline.png" alt="home" />
@@ -55,7 +56,7 @@
             </div>
             <span class="block h-full w-2 bg-color1 rounded-full"></span>
           </a>
-          <a href="" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2">
+          <a href="#page4" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2 nav-button">
             <div class="flex items-center justify-between w-[147px]">
               <div>
                 <img class="w-[38px]" src="assets/kompetisi.png" alt="home" />
@@ -64,7 +65,7 @@
             </div>
             <span class="block h-full w-2 bg-color1 rounded-full"></span>
           </a>
-          <a href="" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2">
+          <a href="#page7" class="bg-white rounded-3xl flex justify-between h-max pl-5 pr-3 py-2 nav-button">
             <div class="flex items-center justify-between w-[167px]">
               <div>
                 <img class="w-[38px]" src="assets/pendaftaran.png" alt="home" />
@@ -75,18 +76,23 @@
           </a>
         </section>
       </div>
-    </div> -->
+    </div>
     <!-- End navbar -->
+    <!-- Top -->
+    <a href="#page1" class="fixed z-30 bottom-8 right-5 bg-gray-500/30 w-[70px] h-[70px] flex justify-center items-center rounded-xl backdrop-blur-xl">
+      <img class="w-[50px] h-[50px]" src="assets/top.png" alt="top" />
+    </a>
+    <!-- End Top -->
     <!-- page1 -->
-    <div class="w-full h-[100svh] relative overflow-hidden flex flex-col">
+    <div class="w-full h-[100svh] relative overflow-hidden flex flex-col" id="page1">
       <nav class="w-full flex justify-between items-center px-1 h-[13.8svh]">
         <div>
-          <img src="assets/logo.png" alt="logo" class="w-[12svh]" />
+          <img src="assets/logo.png" alt="logo" class="w-[80px]" />
         </div>
-        <div class="flex flex-col h-[3.7svh] justify-between mr-5">
-          <span class="border-2 border-white rounded-lg block w-9"></span>
-          <span class="border-2 border-white rounded-lg block w-9"></span>
-          <span class="border-2 border-white rounded-lg block w-9"></span>
+        <div class="flex flex-col h-[27px] justify-between mr-5 hover:cursor-pointer" id="hamburger">
+          <span class="border-[3px] border-white rounded-lg block w-10"></span>
+          <span class="border-[3px] border-white rounded-lg block w-10"></span>
+          <span class="border-[3px] border-white rounded-lg block w-10"></span>
         </div>
       </nav>
       <!-- background -->
@@ -95,12 +101,12 @@
       </div>
       <!-- background -->
       <div class="flex flex-col justify-between h-sm:justify-normal h-sm:gap-y-12 h-[60svh] h-sm:h-max text-white w-[70%] self-center mt-12 h-md:mt-16">
-        <h1 class="font-bold text-5xl">IT FEST</h1>
-        <div class="font-medium h-48 h-sm:h-max flex flex-col h-sm:gap-y-8 h-md:gap-y-10 justify-between h-sm:justify-normal text-md h-sm:text-lg">
+        <h1 class="font-bold text-5xl" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-duration="500">IT FEST</h1>
+        <div data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-duration="700" class="font-medium h-48 h-sm:h-max flex flex-col h-sm:gap-y-8 h-md:gap-y-10 justify-between h-sm:justify-normal text-md h-sm:text-lg">
           <p>Selamat datang di IT FEST, acara yang menghadirkan serangkaian perlombaan kreatif dalam bidang teknologi informasi!</p>
           <p>Pendaftaran akan dilaksanakan pada tanggal 16 juli - 17 agustus</p>
         </div>
-        <a class="h-max w-max" href=""
+        <a class="h-max w-max" href="#page7" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-duration="900"
           ><button class="h-max w-28 h-sm:w-max px-6 h-sm:px-10 py-2 text-center bg-color1 text-[15px] h-sm:text-lg box-content rounded-xl">
             informasi Lebih <br />
             Lanjut
@@ -110,38 +116,38 @@
     </div>
     <!-- End Page 1 -->
     <!-- page 2 -->
-    <div class="w-full h-max relative flex flex-col pt-8 items-center overflow-hidden">
+    <div class="w-full h-max relative flex flex-col pt-8 items-center overflow-hidden" id="page2">
       <!-- Background -->
       <div class="absolute -top-1 -z-50 w-full">
         <img src="assets/Background.png" class="w-full" alt="bg" />
       </div>
       <!-- Background -->
-      <div class="text-white font-semibold text-[42px] w-max leading-[50px]">
+      <div data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="700" class="text-white font-semibold text-[42px] w-max leading-[50px]">
         <h1>ABOUT</h1>
         <span class="block border-b-[3px] w-[60%]"></span>
       </div>
       <section class="w-[90%] flex flex-col justify-between text-white mt-10 mb-24 h-[1260px]">
         <div class="w-full flex flex-col">
-          <div class="self-end w-[63%]">
+          <div class="self-end w-[63%]" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="" src="assets/about1.png" alt="about1" />
           </div>
-          <div class="w-[72%] mt-5 border-b-[3px] pb-1">
+          <div class="w-[72%] mt-5 border-b-[3px] pb-1" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <p>IT FEST adalah sebuah acara tahunan yang diadakan untuk menginspirasi, berinovasi, dan berkolaborasi dalam bidang teknologi informasi.</p>
           </div>
         </div>
         <div class="w-full flex flex-col">
-          <div class="w-[63%]">
+          <div class="w-[63%]" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="" src="assets/about2.png" alt="about2" />
           </div>
-          <div class="self-end w-[72%] mt-5 border-b-[3px] pb-1 text-right">
+          <div class="self-end w-[72%] mt-5 border-b-[3px] pb-1 text-right" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <p>Acara ini bertujuan untuk menyatukan para pelajar, dan penggiat teknologi guna berbagi pengetahuan dan pengalaman terkini dalam industri IT.</p>
           </div>
         </div>
         <div class="w-full flex flex-col">
-          <div class="self-end w-[72%]">
+          <div class="self-end w-[72%]" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="" src="assets/about3.png" alt="about3" />
           </div>
-          <div class="w-[72%] mt-5 border-b-[3px] pb-1">
+          <div class="w-[72%] mt-5 border-b-[3px] pb-1" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <p>
               Melalui serangkaian seminar, workshop, dan kompetisi teknologi dan games yang menarik, IT FEST memberikan kesempatan bagi para peserta untuk meningkatkan keterampilan mereka serta menjalin koneksi dengan sesama pecinta IT.
             </p>
@@ -151,8 +157,8 @@
     </div>
     <!-- End page 2 -->
     <!-- Page 3 -->
-    <div class="overflow-hidden bg-color2 w-full h-max px-5 py-10 relative">
-      <div class="text-white font-bold text-[28px] w-max mb-10">
+    <div class="overflow-hidden bg-color2 w-full h-max px-5 py-10 relative" id="page3">
+      <div class="text-white font-bold text-[28px] w-max mb-10" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
         <h1>TimeLine Event<br />IT FEST</h1>
         <span class="block border-b-[3px] w-[70%]"></span>
       </div>
@@ -170,7 +176,7 @@
           </div>
           <!-- End num & line -->
           <!-- Ket -->
-          <div class="flex-1 flex flex-col gap-y-2 mt-2">
+          <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <!-- Tgl -->
             <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
               <p>16 Juli - 17 Agustus</p>
@@ -205,10 +211,10 @@
           </div>
           <!-- End num & line -->
           <!-- Ket -->
-          <div class="flex-1 flex flex-col gap-y-2 mt-2">
+          <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <!-- Tgl -->
             <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
-              <p>17 Agustus</p>
+              <p>18 Agustus</p>
             </div>
             <!-- End Tgl -->
             <!-- Detail Ket -->
@@ -240,7 +246,7 @@
           </div>
           <!-- End num & line -->
           <!-- Ket -->
-          <div class="flex-1 flex flex-col gap-y-2 mt-2">
+          <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <!-- Tgl -->
             <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
               <p>22 Agustus - 23 Agustus</p>
@@ -272,7 +278,7 @@
           </div>
           <!-- End num & line -->
           <!-- Ket -->
-          <div class="flex-1 flex flex-col gap-y-2 mt-2">
+          <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <!-- Tgl -->
             <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
               <p>24 Agustus</p>
@@ -298,20 +304,20 @@
     </div>
     <!-- End Page 3 -->
     <!-- Page 4 -->
-    <div class="relative flex flex-col py-8 pb-24 gap-y-10 w-full h-max overflow-hidden">
+    <div class="relative flex flex-col py-8 pb-24 gap-y-10 w-full h-max overflow-hidden" id="page4">
       <!-- Background -->
       <div class="absolute -top-1 -z-50 w-full">
         <img src="assets/Background.png" class="w-full" alt="bg" />
       </div>
       <!-- Background -->
-      <div class="text-white font-bold text-[28px] w-max self-center">
+      <div class="text-white font-bold text-[28px] w-max self-center" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="800">
         <h1 class="leading-9">KOMPETISI</h1>
         <span class="block border-b-[3px] w-[70%]"></span>
       </div>
       <section class="flex flex-col w-full overflow-hidden gap-y-12 mb-16">
         <div class="flex flex-col">
           <!-- Chat -->
-          <div class="self-end mr-5">
+          <div class="self-end mr-5" data-aos="zoom-in-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="w-[200px]" src="assets/chat1.png" alt="chat" />
           </div>
           <!-- End Chat -->
@@ -323,19 +329,19 @@
         </div>
         <div class="flex flex-col">
           <!-- Chat -->
-          <div class="relative z-10">
+          <div class="relative z-10" data-aos="zoom-in-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="w-[270px]" src="assets/chat2.png" alt="chat" />
           </div>
           <!-- End Chat -->
           <!-- Person -->
-          <div class="w-max h-max -mr-5 -mt-10 self-end">
-            <img class="w-[260px]" src="assets/person2.png" alt="person" />
+          <div class="w-max h-max -mr-8 -mt-10 self-end">
+            <img class="w-[280px]" src="assets/person2.png" alt="person" />
           </div>
           <!-- End Person -->
         </div>
         <div class="flex flex-col gap-y-10">
           <!-- Chat -->
-          <div class="relative z-10 self-end mr-10">
+          <div class="relative z-10 self-end mr-10" data-aos="zoom-in-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="w-[220px]" src="assets/chat3.png" alt="chat" />
           </div>
           <!-- End Chat -->
@@ -357,21 +363,21 @@
     <div class="flex bg-color2 w-full h-max overflow-hidden justify-center py-16">
       <section class="w-[90%] flex flex-col gap-y-20">
         <div class="flex flex-col gap-y-4">
-          <div class="flex flex-col w-56 leading-7">
+          <div class="flex flex-col w-56 leading-7" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h2 class="text-white text-[22px] font-bold">Kompetisi</h2>
             <h1 class="text-[28px] text-color4 font-bold self-end">Poster Design</h1>
             <span class="border-b-[3px] w-[76%] mt-1"></span>
           </div>
-          <div class="self-center">
+          <div class="self-center" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="w-[290px]" src="assets/poster_design.png" alt="" />
           </div>
-          <div class="bg-white text-color3 box-border px-6 py-10 h-max w-[260px] text-[15px] self-end rounded-2xl shadow-boxKompetisi">
+          <div class="bg-white text-color3 box-border px-6 py-10 h-max w-[260px] text-[15px] self-end rounded-2xl shadow-boxKompetisi" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <p>
               Kompetisi <span class="text-xl font-bold">Poster Design</span> di IT FEST 2024 mengajak desainer grafis untuk membuat poster menarik sesuai tema. Pemenang akan mendapatkan hadiah uang tunai dan karyanya akan dipamerkan di
               acara. Tunjukkan bakat desainmu dan bersaing dengan desainer terbaik!
             </p>
           </div>
-          <div class="flex flex-col w-56 leading-7">
+          <div class="flex flex-col w-56 leading-7" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h2 class="text-white text-[22px] font-bold">TimeLine</h2>
             <h1 class="text-[28px] text-color4 font-bold self-end">Poster Design</h1>
             <span class="border-b-[3px] w-[76%] mt-1"></span>
@@ -391,7 +397,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>16 Juli - 17 Agustus</p>
@@ -425,7 +431,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>18 Agustus - 22 Agustus</p>
@@ -459,7 +465,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>23 Agustus</p>
@@ -490,7 +496,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>24 Agustus</p>
@@ -515,21 +521,21 @@
           <!-- Finish TimeLine -->
         </div>
         <div class="flex flex-col gap-y-4">
-          <div class="flex flex-col w-48 leading-7 self-end">
+          <div class="flex flex-col w-48 leading-7 self-end" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h2 class="text-white text-[22px] font-bold">Kompetisi</h2>
             <h1 class="text-[28px] text-color4 font-bold self-end">Web Design</h1>
             <span class="border-b-[3px] w-[76%] mt-1"></span>
           </div>
-          <div class="self-center">
+          <div class="self-center" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="w-[290px]" src="assets/web_design.png" alt="" />
           </div>
-          <div class="bg-white text-color3 box-border px-6 py-10 h-max w-[260px] text-[15px] rounded-2xl shadow-boxKompetisi">
+          <div class="bg-white text-color3 box-border px-6 py-10 h-max w-[260px] text-[15px] rounded-2xl shadow-boxKompetisi" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <p>
               Kompetisi <span class="text-xl font-bold">Web Design</span> di IT FEST 2024 mengundang desainer web untuk membuat situs yang menarik dan fungsional. Pemenang akan mendapatkan hadiah uang tunai dan karyanya akan dipamerkan.
               Tunjukkan keahlianmu dan bersaing dengan yang terbaik!
             </p>
           </div>
-          <div class="flex flex-col w-48 leading-7 self-end">
+          <div class="flex flex-col w-48 leading-7 self-end" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h2 class="text-white text-[22px] font-bold">TimeLine</h2>
             <h1 class="text-[28px] text-color4 font-bold self-end">Web Design</h1>
             <span class="border-b-[3px] w-[76%] mt-1"></span>
@@ -549,7 +555,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>16 Juli - 17 Agustus</p>
@@ -583,7 +589,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>18 Agustus - 20 Agustus</p>
@@ -617,7 +623,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>21 Agustus</p>
@@ -651,7 +657,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>22 Agustus</p>
@@ -685,7 +691,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>23 Agustus</p>
@@ -716,7 +722,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>24 Agustus</p>
@@ -741,21 +747,21 @@
           <!-- Finish TimeLine -->
         </div>
         <div class="flex flex-col gap-y-4">
-          <div class="flex flex-col w-56 leading-7">
+          <div class="flex flex-col w-56 leading-7" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h2 class="text-white text-[22px] font-bold">Kompetisi</h2>
             <h1 class="text-[28px] text-color4 font-bold self-end">Mobile Legend</h1>
             <span class="border-b-[3px] w-[76%] mt-1"></span>
           </div>
-          <div class="self-center">
+          <div class="self-center" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="w-[290px]" src="assets/mobile_legend.png" alt="" />
           </div>
-          <div class="bg-white text-color3 box-border px-6 py-10 h-max w-[270px] text-[15px] self-end rounded-2xl shadow-boxKompetisi">
+          <div class="bg-white text-color3 box-border px-6 py-10 h-max w-[270px] text-[15px] self-end rounded-2xl shadow-boxKompetisi" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <p>
               Kompetisi <span class="text-xl font-bold">Mobile Legends</span> di IT FEST 2024 mengundang para gamer untuk bertarung dalam permainan yang seru dan kompetitif. Pemenang akan mendapatkan hadiah uang tunai dan pengakuan sebagai
               yang terbaik. Ayo tunjukkan skill bermainmu dan raih kemenangan!
             </p>
           </div>
-          <div class="flex flex-col w-56 leading-7">
+          <div class="flex flex-col w-56 leading-7" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h2 class="text-white text-[22px] font-bold">TimeLine</h2>
             <h1 class="text-[28px] text-color4 font-bold self-end">Mobile Legend</h1>
             <span class="border-b-[3px] w-[76%] mt-1"></span>
@@ -775,7 +781,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>16 Juli - 17 Agustus</p>
@@ -809,7 +815,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>18 Agustus</p>
@@ -843,7 +849,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>22 Agustus</p>
@@ -877,7 +883,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>23 Agustus</p>
@@ -908,7 +914,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>24 Agustus</p>
@@ -933,21 +939,21 @@
           <!-- Finish TimeLine -->
         </div>
         <div class="flex flex-col gap-y-4">
-          <div class="flex flex-col w-48 leading-7 self-end">
+          <div class="flex flex-col w-48 leading-7 self-end" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h2 class="text-white text-[22px] font-bold">Kompetisi</h2>
             <h1 class="text-[28px] text-color4 font-bold self-end">FootBall PES</h1>
             <span class="border-b-[3px] w-[76%] mt-1"></span>
           </div>
-          <div class="self-center">
+          <div class="self-center" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <img class="w-[290px]" src="assets/football_pes.png" alt="" />
           </div>
-          <div class="bg-white text-color3 box-border px-6 py-10 h-max w-[260px] text-[15px] rounded-2xl shadow-boxKompetisi">
+          <div class="bg-white text-color3 box-border px-6 py-10 h-max w-[260px] text-[15px] rounded-2xl shadow-boxKompetisi" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <p>
               Kompetisi <span class="text-xl font-bold">Football PES</span> di IT FEST 2024 mengundang para gamer untuk bersaing dalam permainan sepak bola virtual yang seru. Pemenang akan mendapatkan hadiah uang tunai dan pengakuan sebagai
               pemain terbaik. Tunjukkan kemampuanmu di lapangan virtual dan raih kemenangan!
             </p>
           </div>
-          <div class="flex flex-col w-48 leading-7 self-end">
+          <div class="flex flex-col w-48 leading-7 self-end" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h2 class="text-white text-[22px] font-bold">TimeLine</h2>
             <h1 class="text-[28px] text-color4 font-bold self-end">FootBall PES</h1>
             <span class="border-b-[3px] w-[76%] mt-1"></span>
@@ -967,7 +973,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>16 Juli - 17 Agustus</p>
@@ -1001,7 +1007,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>18 Agustus</p>
@@ -1035,7 +1041,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>22 Agustus</p>
@@ -1066,7 +1072,7 @@
               </div>
               <!-- End num & line -->
               <!-- Ket -->
-              <div class="flex-1 flex flex-col gap-y-2 mt-2">
+              <div class="flex-1 flex flex-col gap-y-2 mt-2" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
                 <!-- Tgl -->
                 <div class="bg-white text-color3 font-bold text-[14px] h-[30px] rounded-md flex items-center px-3">
                   <p>24 Agustus</p>
@@ -1106,7 +1112,7 @@
       </div>
       <!-- Background -->
       <!-- Judul -->
-      <div class="w-[200px] self-center relative h-max flex flex-col">
+      <div class="w-[200px] self-center relative h-max flex flex-col" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
         <h1 class="text-white font-inknut text-[36px] font-bold -rotate-[30deg] mb-6">Total</h1>
         <h3 class="text-color2 font-bold text-2xl self-center ml-8 mb-2">PrizePool</h3>
         <h3 class="text-white font-normal font-itim text-3xl self-end -rotate-[20deg]">Kompetisi</h3>
@@ -1120,56 +1126,56 @@
       <!-- End Judul -->
       <!-- PrizePool -->
       <div class="w-max self-center relative h-[100px] flex">
-        <h1 class="text-[41px] text-white font-bold self-center">Rp.2.900.000</h1>
+        <h1 class="text-[41px] text-white font-bold self-center" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="700">Rp.2.900.000</h1>
         <div class="absolute -top-5 left-10 scale-[0.6] rotate-[5deg]">
-          <img src="assets/bintang.png" alt="bintang" />
+          <img src="assets/bintang.png" alt="bintang" data-aos="zoom-in-right" data-aos-easing="ease-in-sine" data-aos-duration="700" />
         </div>
         <div class="absolute -top-5 -right-8 scale-[0.8] rotate-[20deg]">
-          <img src="assets/bintang.png" alt="bintang" />
+          <img src="assets/bintang.png" alt="bintang" data-aos="zoom-in-left" data-aos-easing="ease-in-sine" data-aos-duration="700" />
         </div>
         <div class="absolute -bottom-9 -left-8 scale-[0.9] rotate-[10deg]">
-          <img src="assets/bintang.png" alt="bintang" />
+          <img src="assets/bintang.png" alt="bintang" data-aos="zoom-in-right" data-aos-easing="ease-in-sine" data-aos-duration="700" />
         </div>
         <div class="absolute -bottom-7 right-8 scale-[0.5] rotate-[5deg]">
-          <img src="assets/bintang.png" alt="bintang" />
+          <img src="assets/bintang.png" alt="bintang" data-aos="zoom-in-left" data-aos-easing="ease-in-sine" data-aos-duration="700" />
         </div>
       </div>
       <!-- End PrizePool -->
       <section class="w-[80%] self-center flex flex-col gap-y-12">
         <div class="w-full relative flex justify-between">
-          <div class="bg-color1 w-[200px] flex flex-col items-center py-2 rounded-md">
+          <div class="bg-color1 w-[200px] flex flex-col items-center py-2 rounded-md" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h3 class="font-semibold text-white text-lg">Poster Design</h3>
             <h2 class="font-semibold text-color3 text-lg">Rp.650.000,00</h2>
           </div>
           <div class="-rotate-6 self-center">
-            <img class="w-[43px]" src="assets/dolar.png" alt="dollar" />
+            <img class="w-[43px]" src="assets/dolar.png" alt="dollar" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700" />
           </div>
         </div>
         <div class="w-full relative flex flex-row-reverse justify-between">
-          <div class="bg-color1 w-[200px] flex flex-col items-center py-2 rounded-md">
+          <div class="bg-color1 w-[200px] flex flex-col items-center py-2 rounded-md" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h3 class="font-semibold text-white text-lg">Web Design</h3>
             <h2 class="font-semibold text-color3 text-lg">Rp.650.000,00</h2>
           </div>
           <div class="-rotate-6 self-center">
-            <img class="w-[43px]" src="assets/dolar.png" alt="dollar" />
+            <img class="w-[43px]" src="assets/dolar.png" alt="dollar" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700" />
           </div>
         </div>
         <div class="w-full relative flex justify-between">
-          <div class="bg-color1 w-[200px] flex flex-col items-center py-2 rounded-md">
+          <div class="bg-color1 w-[200px] flex flex-col items-center py-2 rounded-md" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h3 class="font-semibold text-white text-lg">Mobile Legend</h3>
             <h2 class="font-semibold text-color3 text-lg">Rp.1.000.000,00</h2>
           </div>
           <div class="-rotate-6 self-center">
-            <img class="w-[43px]" src="assets/dolar.png" alt="dollar" />
+            <img class="w-[43px]" src="assets/dolar.png" alt="dollar" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700" />
           </div>
         </div>
         <div class="w-full relative flex flex-row-reverse justify-between">
-          <div class="bg-color1 w-[200px] flex flex-col items-center py-2 rounded-md">
+          <div class="bg-color1 w-[200px] flex flex-col items-center py-2 rounded-md" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="700">
             <h3 class="font-semibold text-white text-lg">FootBall PES</h3>
             <h2 class="font-semibold text-color3 text-lg">Rp.600.000,00</h2>
           </div>
           <div class="-rotate-6 self-center">
-            <img class="w-[43px]" src="assets/dolar.png" alt="dollar" />
+            <img class="w-[43px]" src="assets/dolar.png" alt="dollar" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="700" />
           </div>
         </div>
       </section>
@@ -1181,8 +1187,8 @@
     </div>
     <!-- End Page 6 -->
     <!-- Page 7 -->
-    <div class="bg-color2 flex flex-col gap-y-8 py-10">
-      <div class="self-center flex flex-col w-[220px] leading-7">
+    <div class="bg-color2 flex flex-col gap-y-8 py-10" id="page7">
+      <div class="self-center flex flex-col w-[220px] leading-7" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="700">
         <h2 class="text-white text-[25px] font-bold">Pendaftaran</h2>
         <h1 class="text-color4 text-4xl font-bold self-end">Kompetisi</h1>
         <span class="block border-b-[3px] w-[70%] mt-1"></span>
@@ -1190,7 +1196,7 @@
       <!-- Daftar Biaya -->
       <section class="w-[90%] flex flex-col self-center gap-y-10 mb-10">
         <!-- daftar -->
-        <div class="w-full h-max bg-color4 flex flex-col pr-2 pl-5 pt-3 pb-4 rounded-xl border-t-8 border-x-2 border-b-2 border-color1 shadow-boxPendaftaran">
+        <div class="w-full h-max bg-color4 flex flex-col pr-2 pl-5 pt-3 pb-4 rounded-xl border-t-8 border-x-2 border-b-2 border-color1 shadow-boxPendaftaran" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
           <div class="w-max h-max self-end">
             <img class="w-[120px]" src="assets/tanggal pendaftaran.png" alt="tgl_daftar" />
           </div>
@@ -1199,11 +1205,13 @@
             <h1 class="text-color1 font-semibold text-[28px]">Poster Design</h1>
           </div>
           <h1 class="font-medium text-white text-2xl mb-5">Rp.25.000 / Orang</h1>
-          <a href="" class="w-[90%] self-center mr-3"><button class="bg-color1 w-full rounded-full py-2 text-white underline">Klik Untuk Daftar</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBDy9lcwEGMdYAKfX2MttxSbPlS9pIZf_fuYjzDoGWgGCXLw/viewform?usp=sf_link" class="w-[90%] self-center mr-3" target="_blank"
+            ><button class="bg-color1 w-full rounded-full py-2 text-white underline">Klik Untuk Daftar</button></a
+          >
         </div>
         <!-- End Daftar -->
         <!-- Daftar -->
-        <div class="w-full h-max bg-color4 flex flex-col pr-2 pl-5 pt-3 pb-4 rounded-xl border-t-8 border-x-2 border-b-2 border-color1 shadow-boxPendaftaran">
+        <div class="w-full h-max bg-color4 flex flex-col pr-2 pl-5 pt-3 pb-4 rounded-xl border-t-8 border-x-2 border-b-2 border-color1 shadow-boxPendaftaran" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
           <div class="w-max h-max self-end">
             <img class="w-[120px]" src="assets/tanggal pendaftaran.png" alt="tgl_daftar" />
           </div>
@@ -1212,11 +1220,13 @@
             <h1 class="text-color1 font-semibold text-[28px]">Web Design</h1>
           </div>
           <h1 class="font-medium text-white text-2xl mb-5">Rp.40.000 / Orang</h1>
-          <a href="" class="w-[90%] self-center mr-3"><button class="bg-color1 w-full rounded-full py-2 text-white underline">Klik Untuk Daftar</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5hjD3SiS5MqNIIxqvfFs1yZR_r_FtOgkda5mumRKVC_Zyww/viewform?usp=sf_link" class="w-[90%] self-center mr-3" target="_blank"
+            ><button class="bg-color1 w-full rounded-full py-2 text-white underline">Klik Untuk Daftar</button></a
+          >
         </div>
         <!-- End Daftar -->
         <!-- Daftar -->
-        <div class="w-full h-max bg-color4 flex flex-col pr-2 pl-5 pt-3 pb-4 rounded-xl border-t-8 border-x-2 border-b-2 border-color1 shadow-boxPendaftaran">
+        <div class="w-full h-max bg-color4 flex flex-col pr-2 pl-5 pt-3 pb-4 rounded-xl border-t-8 border-x-2 border-b-2 border-color1 shadow-boxPendaftaran" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
           <div class="w-max h-max self-end">
             <img class="w-[120px]" src="assets/tanggal pendaftaran.png" alt="tgl_daftar" />
           </div>
@@ -1256,11 +1266,13 @@
               </div>
             </div>
           </div>
-          <a href="" class="w-[90%] self-center mr-3"><button class="bg-color1 w-full rounded-full py-2 text-white underline">Klik Untuk Daftar</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScdZ4fzB-O3Ct3-nizwixHEocnhwnWDR654DrMjNggHZZNtbw/viewform?usp=sf_link" class="w-[90%] self-center mr-3" target="_blank"
+            ><button class="bg-color1 w-full rounded-full py-2 text-white underline">Klik Untuk Daftar</button></a
+          >
         </div>
         <!-- End Daftar -->
         <!-- Daftar -->
-        <div class="w-full h-max bg-color4 flex flex-col pr-2 pl-5 pt-3 pb-4 rounded-xl border-t-8 border-x-2 border-b-2 border-color1 shadow-boxPendaftaran">
+        <div class="w-full h-max bg-color4 flex flex-col pr-2 pl-5 pt-3 pb-4 rounded-xl border-t-8 border-x-2 border-b-2 border-color1 shadow-boxPendaftaran" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
           <div class="w-max h-max self-end">
             <img class="w-[120px]" src="assets/tanggal pendaftaran.png" alt="tgl_daftar" />
           </div>
@@ -1300,7 +1312,9 @@
               </div>
             </div>
           </div>
-          <a href="" class="w-[90%] self-center mr-3"><button class="bg-color1 w-full rounded-full py-2 text-white underline">Klik Untuk Daftar</button></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRTh8ldw-dIu8Z-iXiwFhLl6BDB13PwB973yD4kExacu5tKA/viewform?usp=sf_link" class="w-[90%] self-center mr-3" target="_blank"
+            ><button class="bg-color1 w-full rounded-full py-2 text-white underline">Klik Untuk Daftar</button></a
+          >
         </div>
         <!-- End Daftar -->
       </section>
@@ -1346,5 +1360,12 @@
       </div>
     </footer>
     <!-- End Footer -->
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Javascript -->
   </body>
 </html>
