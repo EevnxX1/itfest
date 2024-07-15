@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./html/*.{html,js}'],
+  content: ['./*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
@@ -18,6 +18,11 @@ module.exports = {
       boxShadow: {
         boxKompetisi: '9px 10px 7px 0px rgba(0, 0, 0, 0.3)',
         boxPendaftaran: '0px 0px 15px 0px #2FA8FF',
+      },
+      screens: {
+        'h-sm': { raw: '(min-height: 730px)' },
+        'h-md': { raw: '(min-height: 800px)' },
+        'h-lg': { raw: '(min-height: 1000px)' },
       },
     },
   },
