@@ -859,10 +859,6 @@ video {
   width: 180px;
 }
 
-.w-\[18px\] {
-  width: 18px;
-}
-
 .w-\[200px\] {
   width: 200px;
 }
@@ -974,6 +970,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.origin-center {
+  transform-origin: center;
 }
 
 .-rotate-6 {
@@ -1128,6 +1128,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
