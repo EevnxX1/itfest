@@ -578,12 +578,12 @@ video {
   bottom: -1.25rem;
 }
 
-.-bottom-7 {
-  bottom: -1.75rem;
+.-bottom-\[70px\] {
+  bottom: -70px;
 }
 
-.-bottom-9 {
-  bottom: -2.25rem;
+.-bottom-\[72px\] {
+  bottom: -72px;
 }
 
 .-left-2 {
@@ -602,8 +602,8 @@ video {
   top: -0.25rem;
 }
 
-.-top-5 {
-  top: -1.25rem;
+.-top-16 {
+  top: -4rem;
 }
 
 .bottom-8 {
@@ -624,46 +624,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.-top-8 {
-  top: -2rem;
-}
-
-.-top-10 {
-  top: -2.5rem;
-}
-
-.-top-14 {
-  top: -3.5rem;
-}
-
-.-top-16 {
-  top: -4rem;
-}
-
-.-bottom-16 {
-  bottom: -4rem;
-}
-
-.-bottom-24 {
-  bottom: -6rem;
-}
-
-.-bottom-20 {
-  bottom: -5rem;
-}
-
-.-bottom-\[70px\] {
-  bottom: -70px;
-}
-
-.-bottom-\[72px\] {
-  bottom: -72px;
-}
-
-.-bottom-\[7px\] {
-  bottom: -7px;
 }
 
 .-z-50 {
@@ -778,6 +738,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -851,16 +815,12 @@ video {
   height: max-content;
 }
 
-.h-\[200px\] {
-  height: 200px;
+.h-2 {
+  height: 0.5rem;
 }
 
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-\[150px\] {
-  height: 150px;
+.h-4 {
+  height: 1rem;
 }
 
 .w-10 {
@@ -1020,6 +980,10 @@ video {
   width: max-content;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1150,6 +1114,10 @@ video {
   row-gap: 0.75rem;
 }
 
+.gap-y-32 {
+  row-gap: 8rem;
+}
+
 .gap-y-4 {
   row-gap: 1rem;
 }
@@ -1164,18 +1132,6 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
-}
-
-.gap-y-28 {
-  row-gap: 7rem;
-}
-
-.gap-y-32 {
-  row-gap: 8rem;
-}
-
-.gap-y-36 {
-  row-gap: 9rem;
 }
 
 .self-end {
@@ -1283,11 +1239,6 @@ video {
 
 .bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1475,6 +1426,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1491,6 +1452,10 @@ video {
   font-weight: 600;
 }
 
+.leading-10 {
+  line-height: 2.5rem;
+}
+
 .leading-7 {
   line-height: 1.75rem;
 }
@@ -1505,10 +1470,6 @@ video {
 
 .leading-\[50px\] {
   line-height: 50px;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
 }
 
 .text-color1 {
